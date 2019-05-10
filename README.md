@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Instructions](#instructions)
-- [How to Win](#How)
+- [How to Win](#How to Win)
 
 ## Instructions
 
