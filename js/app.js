@@ -20,6 +20,7 @@ Enemy.prototype.update = function(dt) {
         this.x = this.x+(150*dt);
     }else{
     this.x = -90;
+    this.y = yPos[Math.floor(Math.random()*3)];
     }
 
     if(this.x < player.x + 30 && this.x > player.x - 60 && this.y < player.y + 60 && this.y > player.y - 40){
@@ -47,6 +48,10 @@ var Player = function(x,y){
 Player.prototype.update = function (dt) {
     if(player.y < 20){
         score++;
+        if(score>9){
+            alert("Congrats!!! You have won!!!!!");
+            score=0;
+        }
         document.getElementById("score").innerHTML=score;
         this.reset();
     }
